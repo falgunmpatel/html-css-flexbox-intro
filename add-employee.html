@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payroll Form</title>
+    <link rel="stylesheet" href="add-employee.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">👤</div>
+            <div class="logo-text">
+                <span class="employee">EMPLOYEE</span>
+                <span class="payroll">PAYROLL</span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h1 class="form-title">Employee Payroll Form</h1>
+        
+        <form>
+            <div class="form-group">
+                <label class="form-label">Name</label>
+                <div class="form-input">
+                    <input type="text" name="name">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Profile image</label>
+                <div class="form-input">
+                    <div class="profile-options">
+                        <label class="profile-option">
+                            <input type="radio" name="profile" value="profile1">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile 1" class="profile-image">
+                        </label>
+                        <label class="profile-option">
+                            <input type="radio" name="profile" value="profile2">
+                            <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="Profile 2" class="profile-image">
+                        </label>
+                        <label class="profile-option">
+                            <input type="radio" name="profile" value="profile3">
+                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Profile 3" class="profile-image">
+                        </label>
+                        <label class="profile-option">
+                            <input type="radio" name="profile" value="profile4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile 4" class="profile-image">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Gender</label>
+                <div class="form-input">
+                    <div class="gender-options">
+                        <label class="gender-option">
+                            <input type="radio" name="gender" value="male">
+                            Male
+                        </label>
+                        <label class="gender-option">
+                            <input type="radio" name="gender" value="female">
+                            Female
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Department</label>
+                <div class="form-input">
+                    <div class="department-options">
+                        <label class="department-option">
+                            <input type="checkbox" name="department" value="hr">
+                            HR
+                        </label>
+                        <label class="department-option">
+                            <input type="checkbox" name="department" value="sales">
+                            Sales
+                        </label>
+                        <label class="department-option">
+                            <input type="checkbox" name="department" value="finance">
+                            Finance
+                        </label>
+                        <label class="department-option">
+                            <input type="checkbox" name="department" value="engineer">
+                            Engineer
+                        </label>
+                        <label class="department-option">
+                            <input type="checkbox" name="department" value="others">
+                            Others
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Salary</label>
+                <div class="form-input">
+                    <select name="salary">
+                        <option value="">Select Salary</option>
+                        <option value="10000">₹ 10,000</option>
+                        <option value="20000">₹ 20,000</option>
+                        <option value="30000">₹ 30,000</option>
+                        <option value="40000">₹ 40,000</option>
+                        <option value="50000">₹ 50,000</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Start Date</label>
+                <div class="form-input">
+                    <div class="date-inputs">
+                        <select name="day">
+                            <option value="">Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <!-- More options would go here -->
+                            <option value="31">31</option>
+                        </select>
+                        <select name="month">
+                            <option value="">Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <!-- More options would go here -->
+                            <option value="12">December</option>
+                        </select>
+                        <select name="year">
+                            <option value="">Year</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Notes</label>
+                <div class="form-input">
+                    <textarea name="notes"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-buttons">
+                <button type="button" class="btn btn-cancel">Cancel</button>
+                <button type="submit" class="btn btn-submit">Submit</button>
+                <button type="reset" class="btn btn-reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
